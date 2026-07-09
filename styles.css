@@ -50,7 +50,7 @@ body.landing {
   transform: scale(1.05);
 }
 
-/* Flashcards page */
+/* Cabeçalho da página de flashcards */
 header {
   background: #4a90e2;
   color: white;
@@ -63,7 +63,7 @@ header {
   margin-top: 10px;
 }
 
-/* Grid organizada */
+/* Grid organizada para os cartões */
 .flashcard-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
@@ -71,7 +71,7 @@ header {
   padding: 40px;
 }
 
-/* Flashcards com degradê suave */
+/* Flashcards */
 .flashcard {
   width: 100%;
   height: 200px;
@@ -97,15 +97,18 @@ header {
   box-sizing: border-box;
 }
 
+/* Frente com degradê suave */
 .flashcard .front {
   background: linear-gradient(135deg, #d1f2eb, #b2dfdb);
 }
 
+/* Verso com degradê suave */
 .flashcard .back {
   background: linear-gradient(135deg, #f9e79f, #f7dc6f);
   transform: rotateY(180deg);
 }
 
+/* Efeito de flip */
 .flashcard.flipped .front {
   transform: rotateY(180deg);
 }
@@ -114,6 +117,7 @@ header {
   transform: rotateY(0deg);
 }
 
+/* Hover com sombra */
 .flashcard:hover {
   box-shadow: 0 10px 20px rgba(0,0,0,0.2);
 }
