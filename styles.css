@@ -6,27 +6,19 @@ body {
   color: #333;
 }
 
-/* Landing page com degradê animado */
+/* Landing page com degradê suave */
 body.landing {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background: linear-gradient(135deg, #4a90e2, #50c9c3, #6a82fb, #fc5c7d);
-  background-size: 400% 400%;
-  animation: gradientMove 10s ease infinite;
+  background: linear-gradient(135deg, #4a90e2, #50c9c3);
   color: white;
-}
-
-@keyframes gradientMove {
-  0% {background-position: 0% 50%;}
-  50% {background-position: 100% 50%;}
-  100% {background-position: 0% 50%;}
 }
 
 .landing-container {
   text-align: center;
-  background: rgba(255,255,255,0.1);
+  background: rgba(255,255,255,0.15);
   padding: 40px;
   border-radius: 12px;
   box-shadow: 0 6px 12px rgba(0,0,0,0.2);
@@ -51,18 +43,11 @@ body.landing {
   border-radius: 8px;
   cursor: pointer;
   transition: 0.3s;
-  animation: pulse 1.5s infinite;
 }
 
 .landing-container button:hover {
   background: #f1f1f1;
   transform: scale(1.05);
-}
-
-@keyframes pulse {
-  0% { transform: scale(1); }
-  50% { transform: scale(1.08); }
-  100% { transform: scale(1); }
 }
 
 /* Flashcards page */
@@ -78,18 +63,18 @@ header {
   margin-top: 10px;
 }
 
-/* Grid mais espaçada */
+/* Grid organizada */
 .flashcard-container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 30px;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 25px;
   padding: 40px;
 }
 
-/* Flashcards com degradê */
+/* Flashcards com degradê suave */
 .flashcard {
   width: 100%;
-  height: 220px;
+  height: 200px;
   perspective: 1000px;
   cursor: pointer;
   position: relative;
@@ -113,7 +98,7 @@ header {
 }
 
 .flashcard .front {
-  background: linear-gradient(135deg, #d1f2eb, #a3e4d7);
+  background: linear-gradient(135deg, #d1f2eb, #b2dfdb);
 }
 
 .flashcard .back {
@@ -133,6 +118,7 @@ header {
   box-shadow: 0 10px 20px rgba(0,0,0,0.2);
 }
 
+/* Rodapé */
 footer {
   text-align: center;
   padding: 15px;
