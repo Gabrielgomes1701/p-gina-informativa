@@ -47,7 +47,7 @@ header {
   border-radius: 12px;
   background: white;
   box-shadow: 0 6px 12px rgba(0,0,0,0.1);
-  transition: transform 0.6s;
+  transition: transform 0.6s, box-shadow 0.3s;
   padding: 10px;
 }
 
@@ -66,6 +66,10 @@ header {
 
 .flashcard.flipped .back {
   transform: rotateY(0deg);
+}
+
+.flashcard:hover {
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
 }
 
 footer {
