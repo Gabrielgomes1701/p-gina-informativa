@@ -99,12 +99,12 @@ header {
 
 /* Frente com degradê suave */
 .flashcard .front {
-  background: linear-gradient(135deg, #d1f2eb, #b2dfdb);
+  background: linear-gradient(135deg, #07886c, #b2dfdb);
 }
 
 /* Verso com degradê suave */
 .flashcard .back {
-  background: linear-gradient(135deg, #f9e79f, #f7dc6f);
+  background: linear-gradient(135deg, #f9e79f, #fcac01);
   transform: rotateY(180deg);
 }
 
