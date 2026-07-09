@@ -1,3 +1,11 @@
+/* Reset e fonte */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
 /* Landing page */
 body.landing {
   display: flex;
@@ -6,8 +14,6 @@ body.landing {
   height: 100vh;
   background: linear-gradient(135deg, #4a90e2, #50c9c3);
   color: white;
-  font-family: 'Segoe UI', sans-serif;
-  margin: 0;
 }
 
 .landing-container {
@@ -57,7 +63,6 @@ header {
   color: white;
   padding: 20px;
   text-align: center;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
 .instruction {
@@ -94,7 +99,7 @@ header {
   background: white;
   box-shadow: 0 6px 12px rgba(0,0,0,0.1);
   transition: transform 0.6s, box-shadow 0.3s;
-  padding: 10px;   /* <- aqui estava faltando fechar */
+  padding: 10px;
   box-sizing: border-box;
 }
 
