@@ -99,34 +99,7 @@ header {
 
 /* Frente com degradê suave */
 .flashcard .front {
-  background: linear-gradient(135deg, #07886c, #b2dfdb);
+  background: linear-gradient(135deg, #d1f2eb, #b2dfdb);
 }
 
-/* Verso com degradê suave */
-.flashcard .back {
-  background: linear-gradient(135deg, #f9e79f, #fcac01);
-  transform: rotateY(180deg);
-}
-
-/* Efeito de flip */
-.flashcard.flipped .front {
-  transform: rotateY(180deg);
-}
-
-.flashcard.flipped .back {
-  transform: rotateY(0deg);
-}
-
-/* Hover com sombra */
-.flashcard:hover {
-  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
-}
-
-/* Rodapé */
-footer {
-  text-align: center;
-  padding: 15px;
-  background: #4a90e2;
-  color: white;
-  margin-top: 20px;
-}
+/* Verso
