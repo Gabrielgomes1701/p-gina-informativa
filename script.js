@@ -7,8 +7,3 @@ function openCurtain() {
     window.location.href = "flashcards.html";
   }, 2000);
 }
-
-function flipCard(card) {
-  if (card.classList.contains("info-card")) return;
-  card.classList.toggle("flipped");
-}
