@@ -1,11 +1,57 @@
-body {
+/* Landing page */
+body.landing {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #4a90e2, #50c9c3);
+  color: white;
   font-family: 'Segoe UI', sans-serif;
-  background: linear-gradient(135deg, #fdfbfb, #ebedee);
   margin: 0;
-  padding: 0;
-  color: #333;
 }
 
+.landing-container {
+  text-align: center;
+  background: rgba(255,255,255,0.1);
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+
+.landing-container h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.landing-container p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.landing-container button {
+  background: #fff;
+  color: #4a90e2;
+  border: none;
+  padding: 15px 30px;
+  font-size: 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+  animation: pulse 1.5s infinite;
+}
+
+.landing-container button:hover {
+  background: #f1f1f1;
+  transform: scale(1.05);
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.08); }
+  100% { transform: scale(1); }
+}
+
+/* Flashcards page */
 header {
   background: #4a90e2;
   color: white;
@@ -48,7 +94,8 @@ header {
   background: white;
   box-shadow: 0 6px 12px rgba(0,0,0,0.1);
   transition: transform 0.6s, box-shadow 0.3s;
-  padding: 10px;
+  padding: 10px;   /* <- aqui estava faltando fechar */
+  box-sizing: border-box;
 }
 
 .flashcard .front {
